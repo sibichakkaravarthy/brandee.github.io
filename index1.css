@@ -5,8 +5,9 @@
 body{
     margin:0;
     padding:0;
-    font-family: "Poppins", "Oswald";
+    font-family: "Poppins", sans-serif;  
 }
+
 /* Nav bar starts here */
 
 .navbar
@@ -14,20 +15,19 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: whitesmoke; /*change color here*/
+    background-color: whitesmoke;
     color: white;
 }
 .brand-title
 {
-   max-height: 100%;
+    max-height: 100%;
    max-width: 100%;
    width: 100px;
    height: 100px;
-   /*border: 1px solid;*/
-   /*background: url('./images/Brandee_1_transparent.png') no-repeat scroll center center transparent; */
+   background: url('./images/Brandee_1_transparent.png') no-repeat scroll center center transparent;
    background-size: cover;
    float: left;
-   }
+}
 
 .navbar-links ul{
     margin:0;
@@ -41,12 +41,12 @@ body{
 }
 .navbar-links li a{
     text-decoration: none;
-    color: #ff6700;
+    color:navy;
     padding:1rem;
     display: block; 
 }
 .navbar-links li:hover{
-    background-color:navy;
+    background-color:blue;
 }
 
 .toggle-button{
@@ -62,7 +62,7 @@ body{
 .toggle-button .bar{
     height: 3px;
     width: 100%;
-    background-color:#e6e4e4;
+    background-color:whitesmoke;
     border-radius: 10px;
 }
 
@@ -104,7 +104,6 @@ body{
 }
 .firstcourses h1{ 
    font-size:45px;
-   -webkit-text-stroke: 0.4px navy;
 }
 .firstcourses h4{ 
     font-size:30px;
@@ -117,7 +116,7 @@ body{
     display:flex;
     align-items: center;
     flex-wrap: wrap;
-    background-color: whitesmoke; /*#e3f0ff; */
+    background-color: whitesmoke;
     color:whitesmoke;
 }
 .firstcourse-right-col{
@@ -128,8 +127,7 @@ body{
    background: url('./images/EB_trans.png') no-repeat scroll center center transparent;
    background-size: cover;
    float: right;
-   
-}
+  }
 
 
 .firstcourse-left-col{
@@ -144,8 +142,7 @@ body{
     display: inline-block;
 }
 .firstcourse-text h1{
-    color:#ff6700; /* change oclor here */
-
+    color:#ff6700;
 }
 .firstcourse-text p{
     margin-top: 15px;
@@ -161,7 +158,7 @@ body{
     border-radius: 30px;
     font-weight: bolder;
     transition: 0.1s;
-    border: 1.5px solid navy;
+    border: 1px solid yellowgreen;
     color: #ff6700;
     font-size:large;
     text-transform: uppercase;
@@ -169,7 +166,7 @@ body{
 .btn:hover{
     background:#e91e63;
     color:#fff;
-    border-color:navy;
+    border-color:#e91e63;
     box-shadow: inset 0 0 5px yellowgreen,
                 inset 0 0 10px yellowgreen,
                       0 0 15px yellowgreen,
@@ -192,7 +189,7 @@ body{
         display: inline;
         align-items: left;
         flex-wrap: nowrap;
-        background-color: #04005e;
+        background-color: navy;
         flex-basis: 100%;
         max-height: 100%;
         max-width: 100%;
@@ -230,10 +227,11 @@ body{
    flex-basis: 50%;
    width: 700px;
    height:800px ;  
-   background: url('./images/2.png') no-repeat scroll center center transparent;
+   border: 1px solid;
+   background: url('./images/secondmain.jpeg') no-repeat scroll center center transparent;
    background-size: cover;
    float: right;
-   
+   opacity: .5;
 }
 
 .about-right-col{
@@ -258,7 +256,7 @@ body{
         display: inline-block;
         align-items: left;
         flex-wrap: nowrap;
-        background-color: #efb261;
+        background-color: #ff6700;
         flex-basis: 100%;
         width: 1800px;
         height:680px ;
@@ -283,7 +281,7 @@ body{
     display:flex;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #04005e;
+    background-color: navy;
     color:whitesmoke;
 }
 .course-text h1{
@@ -300,10 +298,12 @@ body{
    flex-basis: 50%;
    width: 700px;
    height:800px ;  
-   background: url('./images/3.png') no-repeat scroll center center transparent;
+   border: 1px solid;
+   background: url('./images/thirdmain.jpeg') no-repeat scroll center center transparent;
    background-size: cover;
    float: right;
- }
+   opacity: .5;
+}
 
 .course-left-col{
     flex-basis: 50%;
@@ -925,94 +925,6 @@ footer .footercontainer .sec p
     }
 }
 
-/* Home menu modification*/
-ul{
-    position:absolute;/* set the position of the navigation bar*/
-    top: 8%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 10px 0; /* Adding some padding */
-    background: #fff; /* Add a white background color to the top navigation */
-    display: flex; /* flex Set navigation bar horizontally using the  display tag*/
-    border-radius: 10px; /* add the border radius */
-    box-shadow: 0 10px 30px orange
-}
- /* Style the links inside the navigation bar */
-ul li{
-    list-style: none;
-    text-align: center;
-    display: block;
-    border-right: 1px solid navy;
-}
-ul li:last-child{
-    border-right: none;
-}
-ul li a{
-    text-decoration: none;
-    padding: 0 50px;
-    display: block;
-}
-/* Style the icon inside the navigation bar */
-ul li a .icon{
-    width: 40px; /* changing the width of the icon */
-    height: 40px; /* changing the height of the icon */
-    text-align: center;
-    
-    overflow: hidden;
-    margin: 0 auto 10px;
-    
-}
-/* set the size, height, width of the icon*/
-ul li a .icon .fa{
-    width: 100%;
-    height: 100%;
-    line-height: 40px;
-    font-size: 34px;
-    transition: 0.5s; /* adding the transition to make it more attractive */
-    color: #000;
-}
-
-/* Change the color of icon on hover */
-ul li a .icon .fa:last-child{
-    color: navy;
-}
-/* style the color and transform of the icon on hover */
-ul li a:hover .icon .fa{
-    transform: translateY(-100%); /* translate y to add the hover effect */
-}
-ul li a .name{
-    position: relative;
-    height: 20px; 
-    width: 100%;
-    display: block;
-    overflow: hidden;/*make ul li a .name overflow is hidden*/
-}
-/*style the font size and set transition of the navigation menu*/
-ul li a .name span{
-    display: block;
-    position: relative;
-    color: navy;
-    font-size: 18px; /* changing font size */
-    line-height: 20px;
-    transition: 0.5s; /* adding the transition to make it more attractive */
-    
-}
-/*set and change position, top, width, left, height color of the 'class'.name span:before*/
-ul li a .name span:before{
-    content: attr(data-text);
-    position: absolute;
-    top: -100%;
-    width: 100%;
-    left: 0;
-    height: 1005;
-    color: orange;
-    
-}
-/*style hover effect of ul li a .name span */
-ul li a:hover .name span{
-    transform: translateY(20px);
-}
 
 
 
